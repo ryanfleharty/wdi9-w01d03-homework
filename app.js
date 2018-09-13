@@ -49,4 +49,22 @@
 		}
 	}
 
+//Q5. Getting to know you 
 
+	const shahzad = ["Shahzad", 1000, "Austin"];
+	const jim = ["Jim", 16, "All cities"];
+	const reuben = ["Reuben", 22, "Durham"];
+	const daniel = ["Daniel", 186, "Dallas"];
+	const ryan = ["Ryan", 65, "Denver"];
+
+	shahzad.splice(0,1, "Gameboy");
+	jim[1] += 1;
+	ryan[2] = "Gotham City";
+	reuben.pop();
+	reuben.push("Chicago");
+	jim.pop();
+	jim.push("Cleveland", "Detroit", "Columbus");
+	jim.splice(2,1);
+
+
+	
