@@ -158,3 +158,15 @@
 		}
 	}
 	console.log(sum);
+
+//Q10. Triangles
+
+	const arg = 7;
+	for (let i = 1; i<= arg; i++){
+		let str = "";
+		for (let j = 0; j<i; j++){
+			str = str.concat("#");
+		}
+		console.log(str);
+	}
+	let str = "";
