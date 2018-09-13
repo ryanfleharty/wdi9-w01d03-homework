@@ -66,5 +66,21 @@
 	jim.push("Cleveland", "Detroit", "Columbus");
 	jim.splice(2,1);
 
+//Q6. Yell at Toitles
 
+	const turts = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+	for (let i =0; i<turts.length ; i++){
+		let upper = turts[i].toUpperCase();
+		console.log(upper);
+	}
 	
+	for (let i = 0; i<turts.length; i++){
+		let toggle = turts[i].toLowerCase().split("");
+		for (let j = 0; j<toggle.length;j++){
+			if (j%2 == 1){
+				toggle[j] = toggle[j].toUpperCase();
+			}
+		}
+		console.log(toggle.join(""));
+	}
