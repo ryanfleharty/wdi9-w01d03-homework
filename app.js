@@ -136,3 +136,13 @@
 	thomWears(thomsCloset[0][1], thomsCloset[1][0], thomsCloset[2][0]);
 	thomWears(thomsCloset[0][0], thomsCloset[1][1], thomsCloset[2][1]);
 	thomWears(thomsCloset[0][2], thomsCloset[1][2], thomsCloset[2][2]);
+
+//Q8. Dirty Laundry
+
+	for (let i = 0; i < kristynsCloset.length; i++){
+		console.log(`Whirr - Now washing ${kristynsCloset[i]}`);
+	}
+
+	for (let i = 0; i <thomsCloset.length; i++){
+		console.log(thomsCloset[i]);
+	}
