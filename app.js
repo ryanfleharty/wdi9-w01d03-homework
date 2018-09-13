@@ -17,16 +17,16 @@
 	for (let i = 0; i <20;i++){
 		console.log("Love me, pet me! HSSSSSSS!");
 		if(i%2===0){
-			let ran = Math.random;
+			let ran = Math.random();
 			if((3*ran<=1)){
 				console.log("...why does the red dot get away...");
 			}
 		
-			if((3*ran()<=2)&&((3*Math.random())>1){
+			if((3*ran<=2)&&((3*ran)>1)){
 				console.log("....The catnip made me do it...");
 			}
 
-			if((3*ran()<=3)&&((3*Math.random())>2){
+			if((3*ran<=3)&&((3*ran)>2)){
 				console.log("...human...why you taking pictures of me");
 			}
 		}
