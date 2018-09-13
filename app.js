@@ -84,3 +84,55 @@
 		}
 		console.log(toggle.join(""));
 	}
+
+//Q7. Return of The Closets
+
+	const kristynsCloset = [
+		  "left shoe",
+		  "cowboy boots",
+		  "right sock",
+		  "GA hoodie",
+		  "green pants",
+		  "yellow knit hat",
+		  "marshmallow peeps"
+	];
+
+	// Thom's closet is more complicated. Check out this nested data structure!!
+	const thomsCloset = [
+  	[
+    		// These are Thom's shirts
+    		"grey button-up",
+    		"dark grey button-up",
+    		"light blue button-up",
+    		"blue button-up",
+  	],[
+   		 // These are Thom's pants
+    		"grey jeans",
+    		"jeans",
+   	 	"PJs"
+  	],[
+  		 // Thom's accessories
+    		"wool mittens",
+    		"wool scarf",
+    		"raybans"
+  	]
+	];
+
+	const left = kristynsCloset[0];
+	kristynsCloset.shift();
+	thomsCloset[2].push(left);
+
+	const kristynWears = (first, second, third) => {
+		console.log(`Kristyn will be wearing: ${first}, ${second}, and ${third}`);
+	}
+	const thomWears = (first, second, third) => {
+		console.log(`Thom will be wearing: ${first}, ${second}, and ${third}`);
+	}
+
+	kristynWears(kristynsCloset[1], kristynsCloset[2], kristynsCloset[3]);
+	kristynWears(kristynsCloset[0], kristynsCloset[3], kristynsCloset[5]);
+	kristynWears(kristynsCloset[3], kristynsCloset[4], kristynsCloset[6]);
+
+	thomWears(thomsCloset[0][1], thomsCloset[1][0], thomsCloset[2][0]);
+	thomWears(thomsCloset[0][0], thomsCloset[1][1], thomsCloset[2][1]);
+	thomWears(thomsCloset[0][2], thomsCloset[1][2], thomsCloset[2][2]);
