@@ -17,16 +17,36 @@
 	for (let i = 0; i <20;i++){
 		console.log("Love me, pet me! HSSSSSSS!");
 		if(i%2===0){
-			if((3*Math.random()<=1)){
+			let ran = Math.random;
+			if((3*ran<=1)){
 				console.log("...why does the red dot get away...");
 			}
 		
-			if((3*Math.random()<=2)&&((3*Math.random())>1){
+			if((3*ran()<=2)&&((3*Math.random())>1){
 				console.log("....The catnip made me do it...");
 			}
 
-			if((3*Math.random()<=3)&&((3*Math.random())>2){
+			if((3*ran()<=3)&&((3*Math.random())>2){
 				console.log("...human...why you taking pictures of me");
 			}
 		}
 	}
+
+//Q4. Fizz Buzz
+
+	for (let i =1;i<=100;i++){
+		if (i%3 ===0){
+			console.log('fizz');
+			if(i%5 === 0){
+			console.log('buzz');
+			}
+		}
+		else if ( i%5 ===0){
+			console.log('buzz');
+		}
+		else{
+			console.log(i);
+		}
+	}
+
+
