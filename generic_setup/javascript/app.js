@@ -43,3 +43,36 @@ for (let i = 1; i< 101 ;i++){
   }
 
 }
+
+//5.
+const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+shahzad[0] = "Gameboy";
+daniel[1] = daniel[1]++;
+ryan[2] = "Gotham City";
+reuben.splice(2,1);
+reuben.push("Chicago");
+jim.splice(2,1,"Lisbon","Porto","Amadora");
+jim.splice(2,1);
+
+//6.
+const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for(i=0;i<turtles.length;i++){
+  console.log(turtles[i].toUpperCase());
+}
+for(let i=0;i<turtles.length;i++){
+  let turtle = "";
+  for(let j=0;j<turtles[i].length;j++){
+    if(j%2 == 0){
+      turtle = turtle.concat(turtles[i].substr(j,1).toUpperCase())
+    }
+    else{
+      turtle = turtle.concat(turtles[i].substr(j,1).toLowerCase())
+    }
+  }
+  console.log(turtle);
+}
