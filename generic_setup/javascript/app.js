@@ -117,3 +117,9 @@ for(i=0;i<2;i++){
 for(i=0;i<thomsCloset.length;i++){
   console.log(`Thom is wearing ${thomsCloset[i][Math.floor(Math.random()*thomsCloset[i].length)]}`);
 }
+for(i=0;i<kristynsCloset.length;i++){
+  console.log(`Whirrr, now washing ${kristynsCloset[i]}`);
+}
+for(i=0;i<thomsCloset.length;i++){
+  console.log(thomsCloset[i]);
+}
